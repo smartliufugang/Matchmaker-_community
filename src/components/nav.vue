@@ -1,16 +1,21 @@
 <template>
   <div>
     <el-menu  class='nav' mode="horizontal">
-        <el-row  type="flex" :gutter="20">
-            <el-col  :xs="24" :sm="8" :xl="8" :md="8" :lg="8">
+        <el-row  :gutter="20">
+            <el-col  :xs="12" :sm="12" :xl="12" :md="12" :lg="12">
                 <el-menu-item class="nav-item">首页</el-menu-item>
             </el-col>
-            <el-col  :xs="24" :sm="8" :xl="8" :md="8" :lg="8">
-        <el-menu-item class="nav-item"></el-menu-item>
+            <el-col  :xs="12" :sm="12" :xl="12" :md="12" :lg="12">
+                <el-row :gutter="20">
+                    <el-col :xs='12' :sm="12" :xl="12" :md="12" :lg="12">
+                        <el-menu-item class="nav-item">注册</el-menu-item>
+                    </el-col>
+                    <el-col :xs="12" :xl="12" :sm="12" :md="12" :lg="12">
+                        <el-menu-item class="nav-item">登录</el-menu-item>
+                    </el-col>
+                </el-row>
             </el-col>
-            <el-col  :xs="24" :sm="8" :xl="8" :md="8" :lg="8">
-                <el-menu-item class="nav-item"></el-menu-item>
-            </el-col>
+            
         </el-row>
         
         
@@ -26,7 +31,7 @@ export default {
 
 <style lang='scss' scoped>
  .nav{
-     background:blue;
+     background:none;
      width: 100%;
      border: 0;
      .nav-item{
